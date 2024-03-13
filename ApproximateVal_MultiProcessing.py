@@ -7,7 +7,7 @@ def Trapezoidal_Rule(f, a, b, n):
     sum_val = func(a, f) + func(b, f)
     for i in range(1, n):
         sum_val += 2 * func(a + i * h, f)
-    print((h / 2) * sum_val)
+    print("Integration using Trapezoidal_Rule in multiProcessing is: ", (h / 2) * sum_val)
 
 
 def Simpsons_Rule(f, a, b, n):
@@ -22,7 +22,7 @@ def Simpsons_Rule(f, a, b, n):
 
 def func(x, equation_string):
     # Evaluate the equation using eval() within the function
-    return eval(equation_string.replace('x', str(x)))
+    return eval("Integration using Simpsons_Rule in multiProcessing is: ", equation_string.replace('x', str(x)))
 
 if __name__ == '__main__':
 
